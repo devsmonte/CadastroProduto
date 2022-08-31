@@ -1,0 +1,8 @@
+create table produto(
+cod NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+nome varchar(20) not null,
+quantidade int not null,
+valor number not null,
+constraint produto_pk primary key (cod)
+);
+
